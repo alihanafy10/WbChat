@@ -5,6 +5,7 @@ import { LoginPage } from './pages/LoginPage'
 import {  RegisterPage } from './pages/RegisterPage'
 import { createBrowserRouter, RouterProvider} from "react-router"
 function App() {
+  
   const routes=createBrowserRouter([
     {
       path:'/register',element:<RegisterPage/>
@@ -17,6 +18,10 @@ function App() {
     }
   ])
   
+
+
+
+
   return (
     <>
   

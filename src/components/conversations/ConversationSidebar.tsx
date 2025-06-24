@@ -1,3 +1,12 @@
+
+import { ConversationSidebarStyle } from "../../utils/styles"
+import { TbEdit } from "react-icons/tb"
+
 export const ConversationSidebar=()=>{
-    return <div>ali</div>
+    return <ConversationSidebarStyle>
+        <header>
+            <h1>Conversation</h1>
+            <TbEdit size={35}/>
+        </header>
+    </ConversationSidebarStyle>
 }

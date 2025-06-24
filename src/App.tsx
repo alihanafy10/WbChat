@@ -1,5 +1,7 @@
 
 import './App.css'
+import { ConversationPanal } from './components/conversations/ConversationPanel'
+import { ConversatiobChannelPage } from './pages/ConversationChannelPage'
 import { ConversationPage } from './pages/ConversationPage'
 import { LoginPage } from './pages/LoginPage'
 import {  RegisterPage } from './pages/RegisterPage'
@@ -14,7 +16,11 @@ function App() {
       path:'/login',element:<LoginPage/>
     },
     {
-      path:'/conversation',element:<ConversationPage/>
+      path:'/conversation',element:<ConversationPage/>, 
+      children:[
+        {path:":id",element:<ConversatiobChannelPage/>},
+        {path:"",element:<ConversationPanal/>}
+      ]
     }
   ])
   

@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import type { PageProps } from './styleTypes';
 
 
+
+
 export const SIDEBAR_WIDTH=400
 
 export const InputField=styled.input`
